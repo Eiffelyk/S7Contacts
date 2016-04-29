@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">通讯录复制</string>
+    <string name="app_name_debug">S7电话DUG</string>
+    <string name="readcontact">读取联系人数量：0人</string>
+    <string name="savepath">完成后显示保存路径</string>
+    <string name="btnStart">开始</string>
+    <string name="btnFinish">退出</string>
+    <string name="readBTName">读取到的蓝牙名字为：XX</string>
+    <string name="tip">本软件作用:\n方便车主更直观快速的使用车载蓝牙电话\n主要功能：\n将手机联系人批量收藏进车载电脑中\n来电显示联系人姓名\n拨打电话直接进收藏目录中选择拨号</string>
+    <string name="tip_2">Tip:\n1.请将手机SD卡根目录中的“馋猫”下的文件夹，复制到TF卡中！\n2.将TF卡插入S7的MAP插槽，按“导航”键，即可完成同步！\n3.读取时一些手机需要授权允许读取联系人\n4.此软件只读取手机联系人，不读取SIM卡\n5.软件读出的蓝牙名字需要和S7匹配的手机的蓝牙名字一致\n6.使用过程中如有问题联系馋猫（QQ：1039188858）</string>
+</resources>

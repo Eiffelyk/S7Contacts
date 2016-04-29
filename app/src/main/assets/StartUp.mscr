@@ -1,0 +1,5 @@
+kill("\SDMemory\CeApp\BT\BT.exe")
+//copy("\BT Disk\CeApp\BT\BT.db","\SDMemory2\GPS_BYD\BT2.db",true)
+copy("\SDMemory2\GPS_BYD\BT.db","\BT Disk\CeApp\BT\BT.db",true)
+Message("同步完毕！","完毕")
+Exit

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.eiffelyk.me.s7contacts.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/btnStart"
+            android:id="@+id/btnStart"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnFinish"
+            android:id="@+id/btnFinish"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/readBTName"
+        android:id="@+id/txtbtName"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_2"
+        android:id="@+id/txtTip"
+        android:layout_above="@+id/linearLayout"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/readcontact"
+        android:id="@+id/localTextView2"
+        android:textSize="15sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#000"
+        android:layout_below="@+id/txtbtName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/savepath"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/localTextView2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:textColor="#0000ff"
+        android:text="@string/tip"
+        android:id="@+id/textView"
+        android:layout_above="@+id/txtTip"/>
+</RelativeLayout>
