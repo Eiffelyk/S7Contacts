@@ -27,6 +27,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private static final String DATABASE_FILENAME = "BT.db";
     private static final String GPS_BYD_PATH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/馋猫/GPS_BYD";
+    //private static final String GPS_BYD_PATH = Environment.getExternalStorageDirectory().toString()+"/YYYYYYY/GPS_BYD";
     private static long contacts_counter;
     private static long db_id;
     private String BTName = getBTName();
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int insertDB(String paramString1, String paramString2) {
-        if (paramString2.length() == 0)
+        if (paramString2.length() == 0|| paramString1.contains("'")|| paramString2.contains("'"))
             return 0;
         db_id = 1L + db_id;
         String str = "INSERT INTO Contact(ID,DeviceName,PhoneNum,Name) VALUES (" + db_id + ",'" + this.BTName + "','" + paramString2 + "','" + paramString1 + "');";
