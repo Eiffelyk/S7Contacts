@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int insertDB(String paramString1, String paramString2) {
-        if (paramString2.length() == 0|| paramString1.contains("'")|| paramString2.contains("'"))
+        if (paramString2.length() == 0|| paramString1.contains("'"))
             return 0;
         db_id = 1L + db_id;
         String str = "INSERT INTO Contact(ID,DeviceName,PhoneNum,Name) VALUES (" + db_id + ",'" + this.BTName + "','" + paramString2 + "','" + paramString1 + "');";
