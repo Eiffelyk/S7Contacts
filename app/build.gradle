@@ -8,8 +8,8 @@ android {
         applicationId "com.eiffelyk.me.s7contacts"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 10
-        versionName "V1.0"
+        versionCode 11
+        versionName "V1.1"
     }
     signingConfigs {
         release {
