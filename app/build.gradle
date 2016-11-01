@@ -40,8 +40,8 @@ android {
             minifyEnabled false      //控制是否进行code混淆， true混淆，false不混淆
             zipAlignEnabled false    //是否zip对齐
             shrinkResources false    //是否删除无用资源， 使用前提是 minifyEnabled 为true
-            applicationIdSuffix ".debug"
-            versionNameSuffix "-dev"
+            applicationIdSuffix ".debug200"
+            versionNameSuffix "-dev200"
             signingConfig signingConfigs.debug
             buildConfigField "boolean", "SHOW_LOG", "Boolean.parseBoolean(\"true\")"
             manifestPlaceholders = [APP_NAME: "@string/app_name_debug"]
